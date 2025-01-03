@@ -18,4 +18,8 @@ conda activate MitoSALt
 perl MitoSAlt1.1.1_LR.pl config_human.txt withRG_tmp_ONT_CG.bam  ONT_CG_RG
 ```
 
-
+### MitoSalt, Myriad, ONT
+the first warning I wanted to get rid of is missing Read Group tags.  Run script addRGtag.sh and then try using that alignment in MitoSalt.  Still crashing.
+```
+qsub addRGtag.sh
+```
